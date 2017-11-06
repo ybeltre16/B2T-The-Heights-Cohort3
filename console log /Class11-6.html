@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<!-- THIS IS A COMMENT -->
+
+	<h1> Look at console to see message</h1>
+	<h1> Tomorrow is Trey's Birthday</h1>
+	<h1 id="pie"> He likes Cherry Pie</h1>
+	<h2 id="newtext"></h2>
+
+	<script type="text/javascript">
+		//gets list of all h1 elements in webpage
+		var h1elements= document. getElementsByTagName('h1');
+		 console.log(h1elements);
+		 // gets element of specified id 
+		 var pieElement=document.getElementById('pie');
+		 pieElement.innerHTML= 'MORE PIE!!!';
+		 // changes color of element to whatever is typed in prompt
+
+		 pieElement.style.color = prompt('Give color');
+
+		 document.getElementById('newtext').innerHTML='I am lost';
+
+
+
+		// Displays message to console
+		console.log("Hello World");
+		//concatenation: the '+' is allowing me to join two values
+
+		console.log("My favor color is" + prompt('Give me color'));
+
+
+		/* Multi
+		line
+		comment */
+	</script>
+	<!-- USING JAVASCRIPT WITH EXTERNAL FILE -->
+	<script src="myscript.js" type="text/javascript"></script>
+	</body>
+</html>
