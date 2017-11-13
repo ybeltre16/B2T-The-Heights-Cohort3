@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id="first"></h1>
+		<!--internal Javascript I added Look at my prompt -->
+
+
+		<script type="text/javascript">
+			document.getElementById('first').innerHTML ="LOOK At My ProMpt";
+			//adding my prompt()
+			var input = prompt("What is your Name?"); 
+
+			console.log(input);
+		</script>
+
+	</body>
+</html>
