@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+	<h1 id="display"></h1>
+
+	<script type="text/javascript">
+		var library = [
+			{ author: 'Bill Gates', title: 'The Road Ahead', readingStatus: true},
+			{ author: 'Steve Jobs', title: 'Walter Issacson', readingStatus: true},
+			{ author: 'Suzanne Collins', title: 'Mockingjay: The Final Book Of The Hunger Games', readingStatus: false},
+			
+		];
+		for( var i in library){
+		
+		 if(library[i].readingStatus == true){// checking to see if the reading status of the index is true 
+			document.getElementById('display').innerHTML += ("Already Read" + " " + library[i].title + " by " + library[i].author) + '<br>' ; //since the reading status is true it will display Already read The Road Ahead by Bill Gates and Already read Walter Issacson by Steve Jobs on the webpage  
+		} else{ 
+			document.getElementById('display').innerHTML += ("Still Needs To Read " + " " + library[i].title + " by " + library[i].author);//since the reading status is false it will display Still Needs To Read Mockingjay: The Final Book Of The Hunger Games by Suzanne Collins 
+		}		
+	}
+	</script>
+	</body>
+</html>
